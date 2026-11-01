@@ -1,0 +1,27 @@
+{
+  "model": "qwen3.8",
+  "base_url": "***",
+  "api_key": "***",
+  "n_items": 500,
+  "n_trials": 3,
+  "seed": 42,
+  "strategy": "cot",
+  "conditions": [
+    "full_context",
+    "rag_only",
+    "actor_critic"
+  ],
+  "critic_feedback": "binary",
+  "k_retrieve": 3,
+  "k_memory": 2,
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "embed_backend": "openai",
+  "embed_model": "embedding",
+  "temperature": 0.0,
+  "max_tokens": 1024,
+  "no_think": true,
+  "max_retries": 6,
+  "out_dir": "results",
+  "tags": {}
+}

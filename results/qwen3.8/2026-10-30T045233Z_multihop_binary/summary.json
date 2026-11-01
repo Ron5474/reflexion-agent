@@ -1,0 +1,22 @@
+{
+  "conditions": {
+    "actor_critic": {
+      "n": 50,
+      "n_scored": 50,
+      "n_errors": 0,
+      "correct_relaxed": 37,
+      "acc_relaxed": 0.74,
+      "correct_strict": 33,
+      "acc_strict": 0.66,
+      "mean_attempts": 1.58
+    }
+  },
+  "model": "qwen3.8",
+  "strategy": "multihop",
+  "critic_feedback": "binary",
+  "seed": 42,
+  "n_items": 50,
+  "llm_calls": 108,
+  "elapsed_s": 644.2,
+  "timestamp": "2026-10-30T045233Z"
+}

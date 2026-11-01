@@ -1,0 +1,42 @@
+{
+  "conditions": {
+    "full_context": {
+      "n": 50,
+      "n_scored": 50,
+      "n_errors": 0,
+      "correct_relaxed": 41,
+      "acc_relaxed": 0.82,
+      "correct_strict": 35,
+      "acc_strict": 0.7,
+      "mean_attempts": 1.0
+    },
+    "rag_only": {
+      "n": 50,
+      "n_scored": 50,
+      "n_errors": 0,
+      "correct_relaxed": 32,
+      "acc_relaxed": 0.64,
+      "correct_strict": 28,
+      "acc_strict": 0.56,
+      "mean_attempts": 1.0
+    },
+    "actor_critic": {
+      "n": 50,
+      "n_scored": 50,
+      "n_errors": 0,
+      "correct_relaxed": 36,
+      "acc_relaxed": 0.72,
+      "correct_strict": 30,
+      "acc_strict": 0.6,
+      "mean_attempts": 1.66
+    }
+  },
+  "model": "qwen3.8",
+  "strategy": "cot",
+  "critic_feedback": "binary",
+  "seed": 42,
+  "n_items": 50,
+  "llm_calls": 216,
+  "elapsed_s": 962.1,
+  "timestamp": "2026-10-30T042109Z"
+}

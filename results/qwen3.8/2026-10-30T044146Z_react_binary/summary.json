@@ -1,0 +1,22 @@
+{
+  "conditions": {
+    "actor_critic": {
+      "n": 50,
+      "n_scored": 50,
+      "n_errors": 0,
+      "correct_relaxed": 36,
+      "acc_relaxed": 0.72,
+      "correct_strict": 30,
+      "acc_strict": 0.6,
+      "mean_attempts": 1.64
+    }
+  },
+  "model": "qwen3.8",
+  "strategy": "react",
+  "critic_feedback": "binary",
+  "seed": 42,
+  "n_items": 50,
+  "llm_calls": 114,
+  "elapsed_s": 642.3,
+  "timestamp": "2026-10-30T044146Z"
+}

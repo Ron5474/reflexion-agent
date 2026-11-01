@@ -1,0 +1,36 @@
+[project]
+name = "reflexion-agent"
+version = "0.1.0"
+description = "Actor-Critic Reflexion agent with persistent reflection memory, evaluated on HotPotQA with reproducible, error-audited runs."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+dependencies = [
+    "openai>=1.50",
+    "datasets>=3.0",
+    "faiss-cpu>=1.8",
+    "numpy>=1.26",
+    "tenacity>=8.2",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+# local embeddings via sentence-transformers (pulls torch, ~800 MB CPU build)
+st = ["sentence-transformers>=3.0"]
+
+[project.scripts]
+reflexion = "reflexion_agent.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100

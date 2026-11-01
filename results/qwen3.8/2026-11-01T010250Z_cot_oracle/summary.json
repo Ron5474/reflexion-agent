@@ -1,0 +1,22 @@
+{
+  "conditions": {
+    "actor_critic": {
+      "n": 500,
+      "n_scored": 500,
+      "n_errors": 0,
+      "correct_relaxed": 414,
+      "acc_relaxed": 0.828,
+      "correct_strict": 331,
+      "acc_strict": 0.662,
+      "mean_attempts": 1.582
+    }
+  },
+  "model": "qwen3.8",
+  "strategy": "cot",
+  "critic_feedback": "oracle",
+  "seed": 42,
+  "n_items": 500,
+  "llm_calls": 1082,
+  "elapsed_s": 8432.3,
+  "timestamp": "2026-11-01T010250Z"
+}
